@@ -1,0 +1,92 @@
+.admin-header {
+    width: 250px; /* Chiều rộng của sidebar */
+    height: 100vh; /* Chiều cao toàn bộ màn hình */
+    position: fixed; /* Để sidebar cố định */
+    background-color: #FFF7E6; /* Màu nền sáng */
+    padding: 20px; /* Padding cho sidebar */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng mượt */
+    top: 0; /* Đảm bảo sidebar bắt đầu từ trên cùng */
+    left: 0; /* Đảm bảo sidebar ở bên trái */
+    z-index: 1000; /* Đưa sidebar lên trên các phần khác */
+    display: flex;
+    flex-direction: column; /* Đặt các liên kết theo chiều dọc */
+    justify-content: space-between; /* Đẩy các phần tử lên và xuống để có khoảng cách đều */
+    overflow: hidden; /* Ẩn các phần tử tràn ra ngoài */
+}
+
+.linkadminheader {
+    display: flex;
+    flex-direction: column; /* Đặt các liên kết theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các liên kết */
+}
+
+.header-link {
+    padding: 10px 15px; /* Khoảng cách cho các liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #333; /* Màu chữ tối */
+    background-color: #FFF7E6; /* Nền cho các liên kết */
+    border-radius: 30px; /* Bo tròn góc */
+    text-align: left; /* Căn trái */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển màu nền và phóng to */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+}
+
+.header-link:hover {
+    background-color: #fff1d3; /* Nền sáng hơn khi hover */
+    transform: scale(1.02); /* Phóng to nhẹ khi hover */
+}
+
+.logout-button {
+    margin-bottom: 50px; /* Đẩy nút đăng xuất xuống dưới cùng */
+    padding: 12px 20px; /* Tăng kích thước button */
+    background-color: #FFF7E6; /* Màu nền giống với sidebar */
+    color: #000000; /* Màu chữ đỏ */
+    border: none; /* Không có viền */
+    border-radius: 25px; /* Bo tròn các góc cho nút */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    font-size: 18px; /* Thay đổi kích thước chữ */
+    width: calc(100% - 20px); /* Đảm bảo chiều rộng của nút vừa với sidebar */
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển màu nền và phóng to */
+}
+
+.logout-button:hover {
+    background-color: #fff1d3; /* Màu nền hơi tối hơn khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+.dropdown-menu {
+    display: contents; /* Ẩn theo mặc định */
+}
+
+.dropdown-menu.show {
+    display: block; /* Hiển thị khi dropdown được mở */
+    
+}
+.dropdown-menu a:hover {
+    background-color: #fff1d3; /* Màu nền khi di chuột qua */
+}
+.dropdown-menu a {
+    display: block; /* Cho phép các liên kết chiếm toàn bộ chiều rộng */
+    padding: 10px 15px; /* Thêm khoảng đệm cho các liên kết */
+    color: #000; /* Màu chữ */
+    text-decoration: none; /* Không gạch chân */
+    margin-left: 15px;
+}
+.dropdown-menu li {
+    list-style: none; /* Ẩn dấu chấm */
+}
+
+.message-badge {
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.header-link.active {
+    background-color: #fff1d3 !important; /* Màu nền vàng đậm */
+    font-weight: bold; /* Chữ đậm */
+    color: black !important; /* Chữ trắng để nổi bật */
+}

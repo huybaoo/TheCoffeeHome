@@ -1,0 +1,217 @@
+/* Tổng thể */
+.adminorders-container {
+    margin-left: 290px; /* Để tránh sidebar */
+    padding: 20px;
+    background-color: #f5f5f5; /* Nền sáng */
+    min-height: 100vh; /* Chiếm chiều cao màn hình */
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử theo cột */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Tiêu đề */
+.adminorders-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Bảng danh sách đơn hàng */
+.adminorders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adminorders-table th,
+.adminorders-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.adminorders-table th {
+    background-color: #ccaa60; /* Màu đỏ */
+    color: white;
+    font-weight: bold;
+}
+
+.adminorders-table tbody tr:hover {
+    background-color: #fff9eb; /* Nền nhẹ */
+}
+
+.adminorders-table tr td {
+    border-right: 1px solid #ddd;
+}
+
+/* Nút xác nhận đơn hàng */
+.adminorders-table button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #ccaa60; /* Màu đỏ */
+    color: white;
+}
+
+.adminorders-table button:hover {
+    background-color: #ccaa60; /* Màu đỏ đậm */
+    transform: scale(1.05);
+}
+
+/* Thông báo lỗi và trạng thái loading */
+.adminorders-loading,
+.adminorders-error {
+    padding: 10px 15px;
+    background-color: #fff9eb;
+    color: #ccaa60;
+    border: 1px solid #fff9eb;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Định dạng danh sách sản phẩm */
+.adminorders-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.adminorders-table ul li {
+    padding: 4px 0;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Phân trang nếu cần */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #ccaa60; /* Màu nền mặc định cho nút */
+    color: white; /* Màu chữ */
+    border: none; /* Không viền */
+    padding: 10px 15px; /* Khoảng cách trong nút */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.pagination button:hover {
+    background-color: #b5944a; /* Màu nền khi hover */
+}
+
+.pagination button.active {
+    background-color: #b5944a; /* Màu nền cho nút đang hoạt động */
+}
+
+/* Thanh phân loại đơn hàng */
+.order-status-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.order-status-filter button {
+    background-color: #ccaa60; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Không viền */
+    padding: 10px 15px; /* Khoảng cách trong nút */
+    margin: 0 10px; /* Khoảng cách giữa các nút */
+    border-radius: 4px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.order-status-filter button:hover {
+    background-color: #b5944a;
+}
+
+/* Hiển thị số lượng đơn hàng */
+.order-status-count {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.confirm-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.confirm-dialog p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.confirm-dialog button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.confirm-dialog button:hover {
+    background-color: #b5944a;
+}
+
+.order-status {
+    font-weight: 500;
+    text-align: center;
+    padding: 4px 10px;
+    border-radius: 20px; /* Bo tròn mạnh để trông như chip */
+    color: white;
+    font-size: 13px;
+    display: inline-block;
+    min-width: 130px;
+    white-space: nowrap;
+    background-color: #999; /* Mặc định */
+    border: 1px solid transparent;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.status-confirmed {
+    background-color: #009688;
+}
+
+.status-processing {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.status-pending {
+    background-color: #ff9800;
+}
+
+.status-shipping {
+    background-color: #2196f3;
+}
+
+.status-success {
+    background-color: #4caf50;
+}
+
+.status-cancelled {
+    background-color: #f44336;
+}
+

@@ -1,0 +1,33 @@
+.sales-products {
+    padding-top: 20px;
+    width: 500px;
+    height: 500px;
+    margin: auto; /* Căn giữa component */
+}
+
+.sales-title {
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+.sales-select-container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    justify-content: center; /* Căn giữa các phần tử */
+    margin-bottom: 20px; /* Khoảng cách dưới các dropdown */
+}
+
+.sales-select-container select {
+    margin: 0 10px; /* Khoảng cách giữa các dropdown */
+    padding: 10px; /* Padding cho dropdown */
+}
+
+.sales-error-message {
+    color: red; /* Màu đỏ cho thông báo lỗi */
+    text-align: center; /* Căn giữa thông báo lỗi */
+    margin-top: 10px; /* Khoảng cách trên thông báo lỗi */
+}
+
+.chart-container {
+    height: 500px; /* Đặt chiều cao cho biểu đồ */
+    margin: 20px 0; /* Khoảng cách trên và dưới biểu đồ */
+}

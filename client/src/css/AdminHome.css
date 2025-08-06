@@ -1,0 +1,13 @@
+.adminhome-content {
+    margin-left: 270px; /* Khoảng cách từ sidebar */
+    padding: 20px; /* Padding cho nội dung */
+    height: 690px;
+    background-image: url('../../public/images/hh1.png');
+}
+
+.adminhomeh1 {
+    margin-top: 50px; /* Giảm khoảng cách phía trên */
+    text-align: center;
+    font-size: 24px; /* Thay đổi kích thước chữ */
+    color: #444; /* Màu chữ */
+}

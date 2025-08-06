@@ -1,0 +1,71 @@
+.slideshow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+    overflow: hidden; /* Ẩn phần bên ngoài */
+}
+
+.slideshow-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Hiệu ứng chuyển động */
+}
+
+.slideshow img {
+    width: 100%; /* Hoặc chiều rộng bạn muốn */
+    height: auto;
+    border-radius: 10px; /* Thêm bo góc cho hình ảnh */
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Đảm bảo vị trí bên trái */
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1; /* Đảm bảo nó nằm trên các thành phần khác */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.indicator-container {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray; /* Màu mặc định */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle.active {
+    background-color: orange; /* Màu cho quảng cáo hiện tại */
+}

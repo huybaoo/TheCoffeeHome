@@ -1,0 +1,95 @@
+/* Tổng thể */
+.admincustomers-container {
+    margin-left: 290px; /* Để tránh sidebar */
+    padding: 20px;
+    background-color: #f5f5f5; /* Nền sáng */
+    min-height: 100vh; /* Chiếm chiều cao màn hình */
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử theo cột */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Tiêu đề */
+.admincustomers-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Bảng danh sách tài khoản */
+.admincustomers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admincustomers-table th,
+.admincustomers-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.admincustomers-table th {
+    background-color: #ccaa60; /* Màu đỏ */
+    color: white;
+    font-weight: bold;
+}
+
+.admincustomers-table tbody tr:hover {
+    background-color: #fff9eb; /* Nền nhẹ */
+}
+
+.admincustomers-table tr td {
+    border-right: 1px solid #ddd;
+}
+
+/* Thông báo lỗi và trạng thái loading */
+.admincustomers-loading,
+.admincustomers-error {
+    padding: 10px 15px;
+    background-color: #fff9eb; /* Màu hồng nhạt */
+    color: #ccaa60;
+    border: 1px solid #fff9eb;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Phân trang nếu cần */
+.pagination {
+    display: flex;
+    justify-content: center; /* Căn giữa */
+    align-items: center;
+    margin-top: 20px; /* Khoảng cách giữa bảng và phân trang */
+    clear: both; /* Ngăn chặn phân trang bị đẩy sang bên */
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #ccaa60; /* Màu nền mặc định cho nút */
+    color: white; /* Màu chữ */
+    border: none; /* Không viền */
+    padding: 10px 15px; /* Khoảng cách trong nút */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.pagination button:hover {
+    background-color: #b5944a; /* Màu nền khi hover */
+}
+
+.pagination button.active {
+    background-color: #b5944a; /* Màu nền cho nút đang hoạt động */
+}

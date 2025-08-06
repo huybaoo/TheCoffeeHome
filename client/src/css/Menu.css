@@ -1,0 +1,62 @@
+.menu {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.menu nav {
+    display: flex;
+    justify-content: space-around; /* Căn đều các item trong menu */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.menu li {
+    position: relative; /* Để áp dụng hiệu ứng hover */
+}
+
+.textmenu a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #333; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    padding: 12px 15px; /* Padding cho item */
+    border-radius: 5px; /* Bo góc cho item */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+.textmenu a:hover {
+    background-color: #fbf2de; /* Màu nền khi hover */
+    color: black; /* Màu chữ khi hover */
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+/* Thêm hiệu ứng cho item khi hover */
+.textmenu a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black; /* Màu gạch chân */
+    position: absolute;
+    bottom: -5px; /* Đặt gạch chân dưới item */
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.textmenu a:hover::after {
+    transform: scaleX(1); /* Hiện gạch chân khi hover */
+}

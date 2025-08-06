@@ -1,0 +1,208 @@
+/* CSS cho AdminCategory */
+.category-list {
+    margin-left: 270px; /* Đẩy nội dung tránh sidebar */
+    padding: 30px;
+    background-color: white; /* Màu nền tổng là trắng */
+    min-height: 100vh; /* Chiều cao tối thiểu */
+    font-family: 'Arial', sans-serif;
+}
+
+.category-list h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black; /* Màu chữ đen */
+}
+
+.add-category {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-category input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.add-category button {
+    padding: 10px 20px;
+    background-color: #ccaa60; /* Màu nút */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-category button:hover {
+    background-color: #b5944a; /* Màu nút khi hover */
+    transform: scale(1.05);
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-table th,
+.category-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: black; /* Màu chữ đen cho bảng */
+}
+
+.category-table th {
+    background-color: #ccaa60; /* Màu nền kem cho tiêu đề bảng */
+    color: white; /* Màu chữ đen cho tiêu đề bảng */
+    font-weight: bold;
+}
+
+.category-table th:last-child {
+    text-align: right; /* Đảm bảo tiêu đề cột "Hành động" được căn giữa */
+}
+
+.category-table tr:hover {
+    background-color: #fff9eb; /* Màu nền khi hover */
+}
+
+/* Căn chỉnh tên loại sản phẩm và button */
+.category-item td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: none; /* Loại bỏ màu nền không cần thiết */
+}
+
+.category-item td:last-child {
+    display: flex;
+    justify-content: flex-end; /* Đẩy các nút sang bên phải */
+    align-items: center; /* Căn chỉnh theo chiều dọc nếu cần */
+}
+
+.category-item h4 {
+    margin: 0;
+    flex: 1; /* Tên sản phẩm chiếm đều không gian */
+}
+
+.category-item .button-group {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end; /* Đẩy các nút sang bên phải */
+    flex: 0 0 auto;
+    width: auto; /* Có thể điều chỉnh theo nhu cầu */
+}
+
+.category-item .button-group button {
+    padding: 8px 12px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #ccaa60; /* Màu nút trong nhóm */
+}
+
+.category-item .button-group button:hover {
+    background-color: #b5944a; /* Màu nút trong nhóm khi hover */
+}
+
+/* Màu sắc riêng cho từng nút */
+.edit-button {
+    background-color: #ccaa60; /* Màu nút sửa */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #b5944a; /* Màu nút sửa khi hover */
+}
+
+.delete-button {
+    background-color: #ccaa60; /* Màu nút xóa */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #b5944a; /* Màu nút xóa khi hover */
+}
+
+/* CSS cho Confirm Dialog */
+.confirm-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* Màu nền trắng cho dialog */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1050;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.confirm-dialog p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black; /* Màu chữ đen cho văn bản trong dialog */
+}
+
+.confirm-dialog button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #ccaa60; /* Màu nút trong dialog */
+}
+
+.confirm-dialog button:first-child:hover {
+    background-color: #b5944a; /* Màu nút trong dialog khi hover */
+}
+
+.confirm-dialog button:last-child {
+    background-color: #ccaa60; /* Màu nút xóa trong dialog */
+    color: white;
+}
+
+.confirm-dialog button:last-child:hover {
+    background-color: #b5944a; /* Màu nút xóa trong dialog khi hover */
+}
+
+/* CSS cho ô nhập liệu khi sửa */
+.category-item input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.pagination button {
+    background-color: #ccaa60; /* Màu nền mặc định cho nút */
+    color: white; /* Màu chữ */
+    border: none; /* Không viền */
+    padding: 10px 15px; /* Khoảng cách trong nút */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.pagination button:hover {
+    background-color: #b5944a; /* Màu nền khi hover */
+}
+
+.pagination button.active {
+    background-color: #b5944a; /* Màu nền cho nút đang hoạt động */
+}

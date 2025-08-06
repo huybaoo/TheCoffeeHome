@@ -1,0 +1,89 @@
+.search-container {
+    flex-grow: 1; /* Cho phép form mở rộng */
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.headersearch-form {
+    flex-grow: 1; /* Quan trọng */
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #E57905;
+    background: white;
+}
+
+.suggestion-input {
+    padding: 12px; /* Tăng padding để tạo cảm giác thoải mái hơn */
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Bo góc bên trái */
+    outline: none; /* Xóa outline khi focus */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển màu viền */
+    font-size: 16px; /* Kích thước chữ */
+    width: 800px;
+}
+
+.suggestion-input:focus {
+    border-color: #E57905;
+    box-shadow: 0 0 5px rgba(229, 121, 5, 0.5); /* Hiệu ứng đổ bóng khi focus */
+}
+
+.suggestion-button {
+    padding: 14px 18px;
+    background-color: #E57905;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion-button:hover {
+    background-color: #d46703;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: 320px;
+}
+
+.suggestion-item {
+    display: block; /* Đảm bảo mỗi sản phẩm là block */
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none; /* Xóa đường viền dưới cho sản phẩm cuối cùng */
+}
+
+.suggestion-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: middle; /* Căn giữa hình ảnh và tên */
+}
+
+.suggestion-item .product-name {
+    display: inline-block; /* Hiển thị tên sản phẩm trên một dòng riêng */
+    font-weight: bold;
+}

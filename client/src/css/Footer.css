@@ -1,0 +1,19 @@
+.footer-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    background-color: #FFF7E6;
+    padding: 30px;
+    color: black;
+}
+
+.footer-policy-section,
+.footer-guide-section,
+.footer-support-section {
+    padding: 20px;
+}
+
+.footer-container h3 {
+    margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+}

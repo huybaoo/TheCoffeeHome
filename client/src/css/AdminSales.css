@@ -1,0 +1,101 @@
+.sales {
+    width: 70%;
+    margin: 20px auto;
+    padding-left: 150px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    height: 500px;
+    margin: 20px 0;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.revenue-summary {
+    margin-top: 20px;
+    text-align: center;
+    overflow-x: auto; /* Cho phép cuộn ngang */
+}
+
+.tabs {
+    display: flex; /* Sử dụng flexbox để sắp xếp các tab */
+    justify-content: center; /* Căn giữa các tab */
+    margin-bottom: 20px; /* Khoảng cách dưới cùng */
+}
+
+.tabs button {
+    padding: 10px 20px; /* Khoảng cách bên trong cho các tab */
+    border: 1px solid #eaeaea; /* Viền màu xanh */
+    background-color: #f0f0f0; /* Màu nền mặc định */
+    color: #000000; /* Màu chữ mặc định */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi */
+    margin-right: 5px; /* Khoảng cách giữa các tab */
+}
+
+.tabs button:hover {
+    background-color: #e0e0e0; /* Màu nền khi di chuột qua */
+}
+
+.tabs .active {
+    background-color: #e8e8d3; /* Màu nền của tab đang được chọn */
+    color: rgb(0, 0, 0); /* Màu chữ của tab đang được chọn */
+    border: 1px solid #f0ae74; /* Viền cho tab đang được chọn */
+}
+
+.select-container {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử */
+    justify-content: flex-start; /* Căn trái các phần tử */
+    margin-bottom: 20px; /* Khoảng cách dưới cùng */
+}
+
+.select-container select {
+    padding: 10px; /* Khoảng cách bên trong cho dropdown */
+    margin-right: 10px; /* Khoảng cách bên phải giữa dropdown và nút */
+    border: 1px solid #000000; /* Viền màu xanh */
+    border-radius: 4px; /* Bo góc cho dropdown */
+}
+
+.select-container button {
+    padding: 10px 15px; /* Khoảng cách bên trong cho nút */
+    border: 1px solid #000000;
+    background-color: #e4e4e4; /* Màu nền của nút */
+    color: rgb(0, 0, 0); /* Màu chữ của nút */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi */
+    border-radius: 5px; /* Bo góc cho nút */
+}
+
+.select-container button:hover {
+    background-color: #ddd; /* Màu nền khi di chuột qua nút */
+}
+
+table {
+    width: 100%; /* Đặt chiều rộng bảng là 100% */
+    border-collapse: collapse; /* Gộp viền bảng */
+    margin-top: 10px; /* Khoảng cách trên bảng */
+}
+
+th, td {
+    padding: 15px; /* Tăng khoảng cách bên trong cho ô */
+    text-align: left; /* Căn trái nội dung trong ô */
+    font-size: 16px; /* Tăng kích thước chữ */
+}
+
+th {
+    background-color: #eeeec6; /* Màu nền cho tiêu đề bảng */
+    color: rgb(0, 0, 0); /* Màu chữ cho tiêu đề bảng */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Màu nền cho các hàng chẵn */
+}

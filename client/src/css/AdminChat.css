@@ -1,0 +1,159 @@
+/* AdminChat.css */
+.adminchat-container {
+    width: calc(100% - 250px); /* Tránh header che mất nội dung */
+    margin-left: 250px; /* Dịch nội dung sang phải */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.adminchat-title {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.adminchat-content {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Danh sách cuộc trò chuyện */
+.chat-list {
+    width: 30%;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.chat-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.chat-item:hover {
+    background: #f9f9f9;
+}
+
+.chat-item.selected {
+    background: #d8e3fc;
+}
+
+/* Cửa sổ trò chuyện */
+.chat-window-admin {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 500px;
+}
+
+.chat-window-admin h2 {
+    margin-bottom: 10px;
+}
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #fafafa;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.user-msg {
+    text-align: left;
+    background: #fff;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 4px solid #007bff;
+}
+
+.admin-msg {
+    text-align: right;
+    background: #d8e3fc;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-right: 4px solid #007bff;
+}
+
+/* Input & Button */
+.reply-section {
+    display: flex;
+    margin-top: 10px;
+}
+
+.reply-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.reply-section button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reply-section button:hover {
+    background: #0056b3;
+}
+
+.user-msg, .admin-msg {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-msg {
+    text-align: left;
+    background: #fff;
+    border-left: 4px solid #007bff;
+}
+
+.admin-msg {
+    text-align: right;
+    background: #d8e3fc;
+    border-right: 4px solid #007bff;
+}
+
+.selected-message {
+    background: #cce5ff;
+    border-left: 4px solid #0056b3;
+}
+
+.reply-section input:disabled {
+    background: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.reply-section button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}

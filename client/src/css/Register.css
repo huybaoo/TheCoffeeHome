@@ -1,0 +1,72 @@
+.Register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../../public/images/hh.jpg'); /* Điều chỉnh đường dẫn */
+    background-size: cover; /* Để hình ảnh phủ đầy phần tử */
+    background-position: center; /* Căn giữa hình ảnh */
+}
+
+.Register-box {
+    background:white;
+    padding: 40px 20px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Register-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Register-box input {
+    width: 320px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.Register-box button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #FFF7E6; /* Màu nền */
+    color: #E57905;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.Register-box button:hover {
+    background-color: #f8ecd2; /* Màu nền khi hover */
+}
+
+.Register-box p {
+    font-size: 14px;
+}
+
+.Register-box a {
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+.Register-box a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #d4edda; /* Màu nền xanh nhạt */
+    color: #155724; /* Màu chữ xanh đậm */
+    border: 1px solid #c3e6cb; /* Đường viền xanh nhạt */
+    border-radius: 5px;
+}
