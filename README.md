@@ -42,7 +42,7 @@
 
 ## Hướng dẫn cài đặt
 1. Clone project
-- git clone https://github.com/your-username/thecoffeehome.git
+- git clone https://github.com/huybaoo/thecoffeehome.git
 - cd thecoffeehome
 
 2. Cài đặt và chạy frontend
