@@ -54,3 +54,10 @@
 - cd server
 - npm install
 - node server.js
+  
+---
+
+## Tác giả
+Tên: [Nguyễn Huy Bảo]
+
+Email: [nhbao27204@gmail.com]
